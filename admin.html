@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <h2>Admin Dashboard</h2>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="admin-container">
+
+
+        <!-- Add Event -->
+
+        <div class="admin-form">
+
+            <h2>Add / Edit Event</h2>
+
+
+            <input
+                type="text"
+                id="eventName"
+                placeholder="Event Name">
+
+
+            <select id="eventCategory">
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+            </select>
+
+
+            <input
+                type="date"
+                id="eventDate">
+
+
+            <input
+                type="time"
+                id="eventTime">
+
+
+            <input
+                type="text"
+                id="eventVenue"
+                placeholder="Venue">
+
+
+            <textarea
+                id="eventDescription"
+                placeholder="Event Description">
+            </textarea>
+
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="featured">
+
+                Featured Event
+
+            </label>
+
+
+            <br><br>
+
+
+            <button
+                class="btn"
+                onclick="saveEvent()">
+
+                Save Event
+
+            </button>
+
+
+            <button
+                class="cancel-btn"
+                onclick="cancelEdit()">
+
+                Cancel
+
+            </button>
+
+        </div>
+
+
+        <!-- Event List -->
+
+        <h2>Manage Events</h2>
+
+        <div id="adminEvents"></div>
+
+
+        <hr>
+
+
+        <!-- Registrations -->
+
+        <h2>Registered Students</h2>
+
+
+        <input
+            type="text"
+            id="registrationSearch"
+            placeholder="Search students...">
+
+
+        <div id="registrations"></div>
+
+    </div>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>

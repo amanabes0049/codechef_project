@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Events</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <h2>Campus Club</h2>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+            <a href="admin.html">Admin</a>
+
+        </div>
+
+    </nav>
+
+
+    <section class="section">
+
+        <h1>All Events</h1>
+
+
+        <!-- Search and Filter -->
+
+        <div class="search-filter">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search event name...">
+
+
+            <select id="category">
+
+                <option value="All">
+                    All Categories
+                </option>
+
+                <option value="Technical">
+                    Technical
+                </option>
+
+                <option value="Cultural">
+                    Cultural
+                </option>
+
+                <option value="Sports">
+                    Sports
+                </option>
+
+                <option value="Workshop">
+                    Workshop
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Events -->
+
+        <div
+            id="eventsContainer"
+            class="events-container">
+
+        </div>
+
+    </section>
+
+
+    <script src="events.js"></script>
+
+</body>
+
+</html>

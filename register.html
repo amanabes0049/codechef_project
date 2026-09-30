@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+
+        <h2>Campus Club</h2>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="events.html">Events</a>
+
+        </div>
+
+    </nav>
+
+
+    <div class="form-container">
+
+        <h1>Event Registration</h1>
+
+        <h3 id="eventName"></h3>
+
+
+        <form id="registrationForm">
+
+            <label>Name</label>
+
+            <input
+                type="text"
+                id="name"
+                required>
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                required>
+
+
+            <label>College / Year</label>
+
+            <input
+                type="text"
+                id="collegeYear"
+                placeholder="B.Tech CSE 2nd Year"
+                required>
+
+
+            <label>Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                required>
+
+
+            <button type="submit" class="btn">
+                Submit Registration
+            </button>
+
+        </form>
+
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>
